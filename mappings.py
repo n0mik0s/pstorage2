@@ -1,0 +1,41 @@
+out_index_map = {
+    "mappings": {
+        "properties": {
+            "@timestamp": {"type": "date", "format": "yyyy-MM-dd"},
+            "process_cpu_total": {"type": "half_float"},
+            "process_fd_open": {"type": "long"},
+            "process_memory_rss_bytes": {"type": "float"},
+            "process_memory_rss_pct": {"type": "half_float"},
+            "process_memory_share": {"type": "float"},
+            "process_memory_size": {"type": "float"},
+            "process_pid": {"type": "integer"},
+            "process_username": {"type": "keyword"},
+            "process_name": {"type": "keyword"},
+            "process_cmdline": {"type": "text"},
+            "node": {"type": "keyword"},
+            "metricset_module": {"type": "keyword"},
+            "metricset_name": {"type": "keyword"},
+            "cpu_total": {"type": "half_float"},
+            "cpu_system": {"type": "half_float"},
+            "cpu_idle": {"type": "half_float"},
+            "cpu_user": {"type": "half_float"},
+            "memory_actual_used": {"type": "half_float"},
+            "memory_swap_used": {"type": "half_float"},
+            "memory_used": {"type": "half_float"},
+            "filesystem_total": {"type": "float"},
+            "filesystem_free": {"type": "float"},
+            "filesystem_used_bytes": {"type": "float"},
+            "filesystem_used_pct": {"type": "half_float"},
+            "filesystem_device_name": {"type": "keyword"},
+            "filesystem_mount_point": {"type": "keyword"},
+            "diskio_iostat_read_await": {"type": "float"},
+            "diskio_iostat_read_per_sec_bytes": {"type": "float"},
+            "diskio_iostat_write_await": {"type": "float"},
+            "diskio_iostat_write_per_sec_bytes": {"type": "float"},
+            "diskio_name": {"type": "keyword"},
+            "load_1": {"type": "half_float"},
+            "load_5": {"type": "half_float"},
+            "load_15": {"type": "half_float"}
+        }
+    }
+}
